@@ -32,6 +32,8 @@ body, html {
 }
 
 /*========================Nav Bar=========================*/
+
+ 
 .nav-bar {
     display: flex;
     flex-flow: row wrap;
@@ -116,14 +118,14 @@ ul.menu {
   }
   
   /* Add a dark background on topnav links and the dropdown button on hover */
-  .menu a:hover, .dropdown:hover .dropbtn {
+ .menu a:hover, .dropdown:hover .dropbtn {
     background-color:white;
     color: midnightblue;
     text-decoration: underline;
   }
   
   /* Add a grey background to dropdown links on hover */
-  .dropdown-content a:hover {
+ .dropdown-content a:hover {
     background-color:transparent;
     color: midnightblue;
     text-decoration: underline;
@@ -134,16 +136,14 @@ ul.menu {
     display: block;
   }
   
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 600px) {
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+   @media screen and (max-width: 600px) {
     .menu a:not(:first-child), .dropdown .dropbtn {
       display: none;
-      outline: 0px solid transparent;
     }
     .menu a.icon {
       float: right;
-      display: flex;
-      outline: 0px solid transparent;
+      display: block;
     }
   }
   
@@ -157,13 +157,13 @@ ul.menu {
     }
     .menu.responsive a {
       float: none;
-      display: flex;
+      display: block;
       text-align: left;
     }
     .menu.responsive .dropdown {float: none;}
     .menu.responsive .dropdown-content {position: relative;}
-    .menu.responsive .dropdown .dropbtn {
-      display: flex;
+    .menu .responsive .dropdown .dropbtn {
+      display: block;
       width: 100%;
       text-align: left;
     }
