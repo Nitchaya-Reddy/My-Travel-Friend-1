@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <i><b><title>My Travel Friend</title></b></i>
 </head>
 <body>
@@ -41,24 +42,21 @@
 </section>
 <!--===============Banner================-->
 <section class="banner">
-    <div class="banner-text-item">
-        
         <div class="banner-heading">
             <h1>Pack your bags for next tour</h1>
         </div>
-        <form class="form">
-            <input type="text" list="mylist" placeholder="Where would you like to go?">
-            <datalist id="mylist">
-                <option>Darjeeling</option>
-                <option>Goa</option>
-                <option>Gokarna</option>
-                <option>Kerala</option>
-                <option>Ladakh</option>
-                <option>Rajasthan</option>
-            </datalist>
-            <a href="#" class="book">Search</a>
-        </form>
-    </div>
+         <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Type to search..">
+              <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+           <script src="js/suggestions.js"></script> 
+           <script src="js/script.js"></script> 
 </section>
 
 <!--==============Places===================-->
