@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -196,17 +197,6 @@ ul.menu {
     /*background-size: 100%;*/
 }
 
-.banner-text-item {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    box-shadow: red;
-}
-
 .banner-heading {
     flex: 1;
 }
@@ -218,71 +208,68 @@ ul.menu {
     font-family:'Alegreya', serif;
 }
 
-.banner-text-item .form {
-    flex: 1;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    font-family: 'Alegreya', serif;
-    font-size: larger;
-    background-color:transparent;
-    border-radius: 5px;
-    width: 70%;
-    padding: 1% 2%;
-}
-
-
-.banner-text-item ::placeholder {
-    color:black;
-    opacity: 1; /* Firefox */
+.wrapper{
+    max-width: 450px;
+    margin: 150px auto;
   }
-  
-
-.banner-text-item input,
-.banner-text-item .book {
-    color:black;
-    font-weight: bolder;
-    font-family: 'Alegreya', serif;
-    padding: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-    font-family: 'Alegreya', serif;
+  .wrapper .search-input{
+    background: #fff;
+    width: 100%;
     border-radius: 5px;
-    outline: 0;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
     border: none;
-    background-color: rgb(136, 208, 252);
-    box-shadow: red;
-}
-
-.banner-text-item input {
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-family: 'Alegreya', serif;
-    background-color:white;
-    width: 50%;
-    flex: 2;
-}
-
-.banner-text-item .book {
-    width: 20%;
-    flex: 1;
-}
-
-.banner-text-item .book {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    padding: 15px;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
     cursor: pointer;
-    background-color: #87d5ff;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Alegreya', serif;
-    width: 20%;
-}
-
+  }
 
 /*=============================Places===============================*/
 .places-text {
