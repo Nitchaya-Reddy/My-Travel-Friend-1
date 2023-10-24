@@ -196,7 +196,6 @@ ul.menu {
     background-color: rgba(0, 6, 78, 0.2);
     /*background-size: 100%;*/
 }
-
 .banner-heading {
     flex: 1;
 }
@@ -207,7 +206,6 @@ ul.menu {
     color:rgb(255, 0, 204);
     font-family:'Alegreya', serif;
 }
-
 .wrapper{
     max-width: 450px;
     margin: 150px auto;
@@ -270,6 +268,7 @@ ul.menu {
     color: #644bff;
     cursor: pointer;
   }
+
 
 /*=============================Places===============================*/
 .places-text {
