@@ -176,7 +176,7 @@ ul.menu {
     background-repeat: no-repeat;
     background-position: center;
     /*overflow: hidden;*/
-    width: 100%;
+    /*width: 100%;
     height: 100vh;
     text-align: center;
     position: relative;
@@ -195,7 +195,7 @@ ul.menu {
     right: 0;
     background-color: rgba(0, 6, 78, 0.2);
     /*background-size: 100%;*/
-}
+/*}
 .banner-heading {
     flex: 1;
 }
@@ -270,7 +270,7 @@ ul.menu {
   }*/
 
 .banner {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/046/978/non_2x/rajasthan-india-2018-people-riding-carriages-with-camels-through-the-desert-free-photo.jpeg");
+    background-image: url("bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
