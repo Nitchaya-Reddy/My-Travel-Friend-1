@@ -170,7 +170,7 @@ ul.menu {
     }
   }
 /*=============================Banner=============================*/
-.banner {
+/*.banner {
     background-image: url("bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,7 +267,122 @@ ul.menu {
     font-size: 20px;
     color: #644bff;
     cursor: pointer;
+  }*/
+
+.banner {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/046/978/non_2x/rajasthan-india-2018-people-riding-carriages-with-camels-through-the-desert-free-photo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 6, 78, 0.2);
+    /*background-size: 100%;*/
+}
+
+.banner-text-item {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: red;
+}
+
+.banner-heading {
+    flex: 1;
+}
+
+.banner-heading h1 {
+    font-size: 80px;
+    font-weight: normal;
+    color:rgb(255, 0, 204);
+    font-family: 'Alegreya', serif;
+}
+
+.banner-text-item .form {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: 'Alegreya', serif;
+    font-size: larger;
+    background-color:transparent;
+    border-radius: 5px;
+    width: 70%;
+    padding: 1% 2%;
+}
+
+
+.banner-text-item ::placeholder {
+    color:black;
+    opacity: 1; /* Firefox */
   }
+  
+
+.banner-text-item input,
+.banner-text-item .book {
+    color:black;
+    font-weight: bolder;
+    font-family: 'Alegreya', serif;
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Alegreya', serif;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    background-color: rgb(136, 208, 252);
+    box-shadow: red;
+}
+
+.banner-text-item input {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: 'Alegreya', serif;
+    background-color:white;
+    width: 50%;
+    flex: 2;
+}
+
+.banner-text-item .book {
+    width: 20%;
+    flex: 1;
+}
+
+.banner-text-item .book {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #87d5ff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Alegreya', serif;
+    width: 20%;
+}
+
 
 
 /*=============================Places===============================*/
