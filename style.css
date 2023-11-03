@@ -849,7 +849,6 @@ ul.menu {
         height: 400px;
     }
 }
-
 @media all and (max-width: 708px) {
     .footer{
         width: 100%;
